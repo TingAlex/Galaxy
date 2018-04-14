@@ -2,6 +2,17 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/auth/github": {
+      "target": "http://localhost:5000"
+    },
+    "/api/*": {
+      "target": "http://localhost:5000"
+    },
+    "/images/*": {
+      "target": "http://localhost:5000"
+    }
+  },
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",

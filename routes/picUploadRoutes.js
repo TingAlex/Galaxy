@@ -40,14 +40,15 @@ module.exports = app => {
       console.log(req.files);
 
       let headfile = await req.files['headpic'][0];
-      let headfileFormat = await headfile.originalname.split(".");
-      let headfilename =
-        (await headfile.fieldname) +
-        "-" +
-        Date.now() +
-        "." +
-        headfileFormat[headfileFormat.length - 1];
-      console.log("headfilename is : " + headfilename);
+
+      // let headfileFormat = await headfile.originalname.split(".");
+      // let headfilename =
+      //   (await headfile.fieldname) +
+      //   "-" +
+      //   Date.now() +
+      //   "." +
+      //   headfileFormat[headfileFormat.length - 1];
+      // console.log("headfilename is : " + headfilename);
 
       let backfile = await req.files['backpic'][0];
       let backfileFormat = await backfile.originalname.split(".");
@@ -69,7 +70,7 @@ module.exports = app => {
 </head>
 <body>
  <img src="/images/` +
-          "pic-1523703455208.jpg" +
+          headfile.filename +
           `
  "/>
 </body>

@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const keys = require("./config/keys");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
-
+//TODO:picture upload use:
+//cloudinary://995967916172887:l8RD8WYTNyjDOi47wBiu7hQ5UlQ@tingalex/
 require('./models/Activity')
 require("./models/User")
 require("./models/Address")
