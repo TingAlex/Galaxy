@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const userSchema = new Schema({
   githubId: String,
   userName: String,
+  userUrl:String,
   school: String,
   _headPic: { type: Schema.Types.ObjectId, ref: "Address" },
   _backPic: { type: Schema.Types.ObjectId, ref: "Address" },
