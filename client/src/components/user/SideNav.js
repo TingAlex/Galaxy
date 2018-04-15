@@ -14,33 +14,33 @@ class SideNav extends Component {
 
   render() {
     return <div className="row center">
-        <button className="btn waves-effect waves-light" href="/user/album">
+        <a className="btn waves-effect waves-light" href="/user/album">
           我的图库
-        </button>
+        </a>
 
-        <button className="btn waves-effect waves-light" href="/user/uploadPic">
+        <a className="btn waves-effect waves-light" href="/user/uploadPic">
           上传图片
-        </button>
+        </a>
 
-        <button className="btn waves-effect waves-light" href="/user/raiseActivity">
+        <a className="btn waves-effect waves-light" href="/user/raiseActivity">
           发起活动
-        </button>
+        </a>
 
-        <button className="btn waves-effect waves-light" href="/user/ownActivity">
+        <a className="btn waves-effect waves-light" href="/user/ownActivity">
           我的主办
-        </button>
+        </a>
 
-        <button className="btn waves-effect waves-light" href="/user/activity">
+        <a className="btn waves-effect waves-light" href="/user/activity">
           我的参与
-        </button>
+        </a>
 
-        <button className="btn waves-effect waves-light" href="/user/info">
+        <a className="btn waves-effect waves-light" href="/user/info">
           个人资料
-        </button>
+        </a>
 
-        <button className="btn waves-effect waves-light" href="/user/cashFlow">
+        <a className="btn waves-effect waves-light" href="/user/cashFlow">
           账目记录
-        </button>
+        </a>
       </div>;
   }
 }

@@ -15,6 +15,8 @@ import UploadPic from "./user/UploadPic";
 import RaiseActivity from "./user/RaiseActivity";
 import OwnActivity from "./user/OwnActivity";
 import Info from "./user/Info";
+import MoreInfo from "./MoreInfo";
+import ActivityDetails from "./ActivityDetails";
 // const Header = () => <h2>Navigation Header</h2>;
 const DashBoard = () => <h2>DashBoard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
@@ -33,10 +35,9 @@ const CashFlow = () => <h2>CashFlow</h2>;
 // const UploadPic = () => <h2>Upload</h2>;
 
 const App = () => {
-  return (
-    <div>
+  return <div>
       <BrowserRouter>
-        <div>    
+        <div>
           <Route exact path="/" component={Home} />
           <Route exact path="/surveys" component={DashBoard} />
           <Route exact path="/surveys/new" component={SurveyNew} />
@@ -51,11 +52,11 @@ const App = () => {
           <Route exact path="/user/ownActivity" component={OwnActivity} />
           <Route exact path="/user/raiseActivity" component={RaiseActivity} />
           <Route exact path="/user/uploadPic" component={UploadPic} />
-          
+          <Route exact path="/moreInfo" component={MoreInfo} />
+          <Route exact path="/activityDetails" component={ActivityDetails} />
         </div>
       </BrowserRouter>
-    </div>
-  );
+    </div>;
 };
 
 export default App;
