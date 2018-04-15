@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import "materialize-css";
+import Header from "./Header";
+import Footer from "./Footer";
 // import { Link } from "react-router-dom";
 //TODO:动态获取图片和活动信息！
 // import SurveyList from "./surveys/surveyList";
@@ -14,6 +16,7 @@ class PicStore extends Component {
 
   render() {
     return <div>
+        <Header />
         <div className="section">
           <div className="row container">
             <div className="col m12">
@@ -229,6 +232,7 @@ class PicStore extends Component {
           </li>
         </ul>
         <br />
+        <Footer />
       </div>;
   }
 }

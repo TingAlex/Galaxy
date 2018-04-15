@@ -4,12 +4,17 @@ import { BrowserRouter, Route } from "react-router-dom";
 //BrowserRouter 是react-router的大脑，指导router根据你当前的url去改变components
 //Route 是react 组件，用于在特定route之间建立规则
 
-import Header from "./Header";
+
 import Album from "./user/Album";
 import Home from "./Home";
-import Footer from "./Footer";
+
 import Explore from "./Explore";
 import PicStore from "./PicStore";
+import Activity from "./user/Activity";
+import UploadPic from "./user/UploadPic";
+import RaiseActivity from "./user/RaiseActivity";
+import OwnActivity from "./user/OwnActivity";
+import Info from "./user/Info";
 // const Header = () => <h2>Navigation Header</h2>;
 const DashBoard = () => <h2>DashBoard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
@@ -18,21 +23,20 @@ const SurveyNew = () => <h2>SurveyNew</h2>;
 // const Explore = () => <h2>Explore</h2>;
 // const PicStore = () => <h2>PicStore</h2>;
 
-const Activity = () => <h2>Activity</h2>;
+// const Activity = () => <h2>Activity</h2>;
 
 // const Album = () => <h2>Album</h2>;
 const CashFlow = () => <h2>CashFlow</h2>;
-const Info = () => <h2>Info</h2>;
-const OwnActivity = () => <h2>OwnActivity</h2>;
-const RaiseActivity = () => <h2>RaiseActivity</h2>;
-const UploadPic = () => <h2>Upload</h2>;
+// const Info = () => <h2>Info</h2>;
+// const OwnActivity = () => <h2>OwnActivity</h2>;
+// const RaiseActivity = () => <h2>RaiseActivity</h2>;
+// const UploadPic = () => <h2>Upload</h2>;
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div>
-          <Header />
+        <div>    
           <Route exact path="/" component={Home} />
           <Route exact path="/surveys" component={DashBoard} />
           <Route exact path="/surveys/new" component={SurveyNew} />
@@ -47,7 +51,7 @@ const App = () => {
           <Route exact path="/user/ownActivity" component={OwnActivity} />
           <Route exact path="/user/raiseActivity" component={RaiseActivity} />
           <Route exact path="/user/uploadPic" component={UploadPic} />
-          <Footer />
+          
         </div>
       </BrowserRouter>
     </div>

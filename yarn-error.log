@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js client
+  C:\Program Files\nodejs\node.exe C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js remove jquery
 
 PATH: 
-  C:\Users\Ting\Documents\Galaxy\node_modules\.bin;C:\Users\Ting\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Ting\Documents\Galaxy\node_modules\.bin;C:\Users\Ting\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Ting\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Heroku\client\bin\;C:\Users\Ting\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Ting\AppData\Local\Programs\Python\Python36\;C:\Users\Ting\AppData\Local\Microsoft\WindowsApps;C:\Users\Ting\AppData\Roaming\npm;C:\Program Files\Heroku\bin
+  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Heroku\client\bin\;C:\Users\Ting\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Ting\AppData\Local\Programs\Python\Python36\;C:\Users\Ting\AppData\Local\Microsoft\WindowsApps;C:\Users\Ting\AppData\Roaming\npm;C:\Program Files\Heroku\bin
 
 Yarn version: 
   1.5.1
@@ -2397,16 +2397,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c ( cd ./client && yarn start)
-  Directory: C:\Users\Ting\Documents\Galaxy
-  Output:
-  
-      at ProcessTermError.MessageError (C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
-      at ChildProcess.emit (events.js:180:13)
-      at maybeClose (internal/child_process.js:936:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
+  Error: This module isn't specified in a manifest.
+      at new MessageError (C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at Object.<anonymous> (C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:60445:15)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\Ting\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
