@@ -6,11 +6,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Album from "./user/Album";
+import Home from "./Home";
 // const Header = () => <h2>Navigation Header</h2>;
 const DashBoard = () => <h2>DashBoard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
-const Home = () => <h2>Home</h2>;
+// const Home = () => <h2>Home</h2>;
 const Explore = () => <h2>Explore</h2>;
 const PicStore = () => <h2>PicStore</h2>;
 

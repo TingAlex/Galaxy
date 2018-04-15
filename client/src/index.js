@@ -1,3 +1,5 @@
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min.js";
 import React from "react";
 import ReactDOM from "react-dom";
 //Provider 帮助我们把二者联系在一起
