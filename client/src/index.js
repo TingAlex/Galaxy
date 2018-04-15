@@ -1,12 +1,12 @@
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
 import React from "react";
 import ReactDOM from "react-dom";
+
 //Provider 帮助我们把二者联系在一起
 import { Provider } from "react-redux";
 //createStore能够帮助创建一个redux store的实例
 import { createStore, applyMiddleware } from "redux";
-
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css";
 import App from "./components/App";
 import reducers from "./reducers";
 //下面第一个参数是reducer，这里先简单放一个返回空数组的占位置

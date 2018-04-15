@@ -7,13 +7,16 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Album from "./user/Album";
 import Home from "./Home";
+import Footer from "./Footer";
+import Explore from "./Explore";
+import PicStore from "./PicStore";
 // const Header = () => <h2>Navigation Header</h2>;
 const DashBoard = () => <h2>DashBoard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
 // const Home = () => <h2>Home</h2>;
-const Explore = () => <h2>Explore</h2>;
-const PicStore = () => <h2>PicStore</h2>;
+// const Explore = () => <h2>Explore</h2>;
+// const PicStore = () => <h2>PicStore</h2>;
 
 const Activity = () => <h2>Activity</h2>;
 
@@ -44,6 +47,7 @@ const App = () => {
           <Route exact path="/user/ownActivity" component={OwnActivity} />
           <Route exact path="/user/raiseActivity" component={RaiseActivity} />
           <Route exact path="/user/uploadPic" component={UploadPic} />
+          <Footer />
         </div>
       </BrowserRouter>
     </div>
