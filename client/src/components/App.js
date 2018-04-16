@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 //有helper，帮助你在dom之间导航
 //BrowserRouter 是react-router的大脑，指导router根据你当前的url去改变components
 //Route 是react 组件，用于在特定route之间建立规则
-
-
+import { connect } from "react-redux";
+import * as actions from "../actions";
 import Album from "./user/Album";
 import Home from "./Home";
 
@@ -34,29 +34,36 @@ const CashFlow = () => <h2>CashFlow</h2>;
 // const RaiseActivity = () => <h2>RaiseActivity</h2>;
 // const UploadPic = () => <h2>Upload</h2>;
 
-const App = () => {
-  return <div>
-      <BrowserRouter>
-        <div>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/surveys" component={DashBoard} />
-          <Route exact path="/surveys/new" component={SurveyNew} />
+class App extends Component {
+  componentDidMount() {
+    this.props.fetchUser();
+  }
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/surveys" component={DashBoard} />
+            <Route exact path="/surveys/new" component={SurveyNew} />
 
-          <Route exact path="/explore" component={Explore} />
-          <Route exact path="/picstore" component={PicStore} />
+            <Route exact path="/explore" component={Explore} />
+            <Route exact path="/picstore" component={PicStore} />
 
-          <Route exact path="/user/activity" component={Activity} />
-          <Route exact path="/user/album" component={Album} />
-          <Route exact path="/user/cashFlow" component={CashFlow} />
-          <Route exact path="/user/info" component={Info} />
-          <Route exact path="/user/ownActivity" component={OwnActivity} />
-          <Route exact path="/user/raiseActivity" component={RaiseActivity} />
-          <Route exact path="/user/uploadPic" component={UploadPic} />
-          <Route exact path="/moreInfo" component={MoreInfo} />
-          <Route exact path="/activityDetails" component={ActivityDetails} />
-        </div>
-      </BrowserRouter>
-    </div>;
-};
+            <Route exact path="/user/activity" component={Activity} />
+            <Route exact path="/user/album" component={Album} />
+            <Route exact path="/user/cashFlow" component={CashFlow} />
+            <Route exact path="/user/info" component={Info} />
+            <Route exact path="/user/ownActivity" component={OwnActivity} />
+            <Route exact path="/user/raiseActivity" component={RaiseActivity} />
+            <Route exact path="/user/uploadPic" component={UploadPic} />
+            <Route exact path="/moreInfo" component={MoreInfo} />
+            <Route exact path="/activityDetails" component={ActivityDetails} />
+          </div>
+        </BrowserRouter>
+      </div>
+    );
+  }
+}
 
-export default App;
+export default connect(null, actions)(App);

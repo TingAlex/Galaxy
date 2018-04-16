@@ -11,7 +11,7 @@ class MoreInfo extends Component {
     super(props);
     $(document).ready(function() {
       $(".parallax").parallax();
-      $(".datepicker").datepicker();
+    //   $(".datepicker").datepicker();
     });
   }
 
@@ -49,13 +49,13 @@ class MoreInfo extends Component {
                                         <i className="material-icons prefix">textsms</i>
                                         <input type="text" id="autocomplete-input" className="autocomplete"/>
 
-                                        <label for="autocomplete-input">大学</label>
+                                        <label htmlFor="autocomplete-input">大学</label>
 
                                     </div>
                                     <div className="input-field col s12 colorDataPicker">
                                         <i className="material-icons prefix">textsms</i>
                                         <input type="text" className="datepicker" id="date-pick"/>
-                                        <label for="date-pick">生日</label>
+                                        <label htmlFor="date-pick">生日</label>
                                     </div>
                                     <div className="row">
                                         <div className="col m3 offset-m3">

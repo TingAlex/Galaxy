@@ -11,7 +11,13 @@ module.exports = app => {
       scope: ["profile", "email"]
     })
   );
-  app.get("/auth/github/callback", passport.authenticate("github"));
+  app.get(
+    "/auth/github/callback",
+    passport.authenticate("github"),
+    (req, res) => {
+      res.redirect("/");
+    }
+  );
   app.get("/api/logout", (req, res) => {
     //这里的logout是和passport绑定的一个函数，可以帮你退出账户，这样req.user就没有了
     req.logout();

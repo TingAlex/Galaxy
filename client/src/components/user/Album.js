@@ -17,7 +17,7 @@ class Album extends Component {
       <div className="workshop">
         <Header />
         <SideNav />
-       <div class="main">
+       <div className="main">
     <div className="row">
         <div className="col s12 m4">
             <div className="card sticky-action">

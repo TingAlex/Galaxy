@@ -46,31 +46,31 @@ class Home extends Component {
         </div>
 
         <div>
-          <div class="section">
+          <div className="section">
             <nav>
-              <div class="nav-wrapper">
-                <div class="row">
-                  <div class="col s12">
-                    <a href="#!" class="breadcrumb">
+              <div className="nav-wrapper">
+                <div className="row">
+                  <div className="col s12">
+                    <a href="#!" className="breadcrumb">
                       Galaxy
                     </a>
-                    <a href="#!" class="breadcrumb">
+                    <a href="#!" className="breadcrumb">
                       活动速递
                     </a>
                   </div>
                 </div>
               </div>
             </nav>
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m4">
-                  <div class="card sticky-action">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img src="/images/background1.jpg" alt="" class="activator" />
+            <div className="container">
+              <div className="row">
+                <div className="col s12 m4">
+                  <div className="card sticky-action">
+                    <div className="card-image waves-effect waves-block waves-light">
+                      <img src="/images/background1.jpg" alt="" className="activator" />
                     </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">
-                        血色蓝月<i class="material-icons right">
+                    <div className="card-content">
+                      <span className="card-title activator grey-text text-darken-4">
+                        血色蓝月<i className="material-icons right">
                           more_vert
                         </i>
                       </span>
@@ -78,14 +78,14 @@ class Home extends Component {
                       <p>大连理工大学</p>
                     </div>
 
-                    <div class="card-action">
+                    <div className="card-action">
                       <a href="#">详情</a>
                       <a href="#">分享</a>
                       <a href="#">忽略</a>
                     </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">
-                        血色蓝月<i class="material-icons right">close</i>
+                    <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">
+                        血色蓝月<i className="material-icons right">close</i>
                       </span>
                       <p>大连理工大学</p>
                       <p>3月22日 20：00</p>
@@ -94,14 +94,14 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4">
-                  <div class="card sticky-action">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img src="/images/background1.jpg" alt="" class="activator" />
+                <div className="col s12 m4">
+                  <div className="card sticky-action">
+                    <div className="card-image waves-effect waves-block waves-light">
+                      <img src="/images/background1.jpg" alt="" className="activator" />
                     </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">
-                        血色蓝月<i class="material-icons right">
+                    <div className="card-content">
+                      <span className="card-title activator grey-text text-darken-4">
+                        血色蓝月<i className="material-icons right">
                           more_vert
                         </i>
                       </span>
@@ -109,14 +109,14 @@ class Home extends Component {
                       <p>大连理工大学</p>
                     </div>
 
-                    <div class="card-action">
+                    <div className="card-action">
                       <a href="#">详情</a>
                       <a href="#">分享</a>
                       <a href="#">忽略</a>
                     </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">
-                        血色蓝月<i class="material-icons right">close</i>
+                    <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">
+                        血色蓝月<i className="material-icons right">close</i>
                       </span>
                       <p>大连理工大学</p>
                       <p>3月22日 20：00</p>
@@ -125,14 +125,14 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4">
-                  <div class="card sticky-action">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img src="/images/background1.jpg" alt="" class="activator" />
+                <div className="col s12 m4">
+                  <div className="card sticky-action">
+                    <div className="card-image waves-effect waves-block waves-light">
+                      <img src="/images/background1.jpg" alt="" className="activator" />
                     </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">
-                        血色蓝月<i class="material-icons right">
+                    <div className="card-content">
+                      <span className="card-title activator grey-text text-darken-4">
+                        血色蓝月<i className="material-icons right">
                           more_vert
                         </i>
                       </span>
@@ -140,14 +140,14 @@ class Home extends Component {
                       <p>大连理工大学</p>
                     </div>
 
-                    <div class="card-action">
+                    <div className="card-action">
                       <a href="#">详情</a>
                       <a href="#">分享</a>
                       <a href="#">忽略</a>
                     </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">
-                        血色蓝月<i class="material-icons right">close</i>
+                    <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">
+                        血色蓝月<i className="material-icons right">close</i>
                       </span>
                       <p>大连理工大学</p>
                       <p>3月22日 20：00</p>
@@ -159,62 +159,62 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div class="section">
+          <div className="section">
             <nav>
-              <div class="nav-wrapper">
-                <div class="row">
-                  <div class="col s12">
-                    <a href="#!" class="breadcrumb">
+              <div className="nav-wrapper">
+                <div className="row">
+                  <div className="col s12">
+                    <a href="#!" className="breadcrumb">
                       Galaxy
                     </a>
-                    <a href="#!" class="breadcrumb">
+                    <a href="#!" className="breadcrumb">
                       天地一瞬
                     </a>
                   </div>
                 </div>
               </div>
             </nav>
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m4">
-                  <div class="card">
-                    <div class="card-image">
+            <div className="container">
+              <div className="row">
+                <div className="col s12 m4">
+                  <div className="card">
+                    <div className="card-image">
                       <img src="/images/background1.jpg" />
 
-                      <a class="btn-floating halfway-fab waves-effect waves-light red">
-                        <i class="material-icons">add</i>
+                      <a className="btn-floating halfway-fab waves-effect waves-light red">
+                        <i className="material-icons">add</i>
                       </a>
                     </div>
-                    <div class="card-content">
-                      <span class="card-title">大工秋月</span>
+                    <div className="card-content">
+                      <span className="card-title">大工秋月</span>
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4">
-                  <div class="card">
-                    <div class="card-image">
+                <div className="col s12 m4">
+                  <div className="card">
+                    <div className="card-image">
                       <img src="/images/background1.jpg" />
 
-                      <a class="btn-floating halfway-fab waves-effect waves-light red">
-                        <i class="material-icons">add</i>
+                      <a className="btn-floating halfway-fab waves-effect waves-light red">
+                        <i className="material-icons">add</i>
                       </a>
                     </div>
-                    <div class="card-content">
-                      <span class="card-title">大工秋月</span>
+                    <div className="card-content">
+                      <span className="card-title">大工秋月</span>
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4">
-                  <div class="card">
-                    <div class="card-image">
+                <div className="col s12 m4">
+                  <div className="card">
+                    <div className="card-image">
                       <img src="/images/background1.jpg" />
 
-                      <a class="btn-floating halfway-fab waves-effect waves-light red">
-                        <i class="material-icons">add</i>
+                      <a className="btn-floating halfway-fab waves-effect waves-light red">
+                        <i className="material-icons">add</i>
                       </a>
                     </div>
-                    <div class="card-content">
-                      <span class="card-title">大工秋月</span>
+                    <div className="card-content">
+                      <span className="card-title">大工秋月</span>
                     </div>
                   </div>
                 </div>

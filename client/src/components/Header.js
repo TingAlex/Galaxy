@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 // import $ from "jquery";
 import "materialize-css";
 class Header extends Component {
@@ -8,8 +9,35 @@ class Header extends Component {
   //     $(".parallax").parallax();
   //   });
   // }
+  renderContent() {
+    switch (this.props.auth) {
+      case null:
+        return;
+      case false:
+        return (
+          <li className="right">
+            <a href="/auth/github">Login With Github</a>
+          </li>
+        );
+      default:
+        return [
+          <li key="2" className="right">
+            <a href="/api/logout">Logout</a>
+          </li>,
+          <li key="3" style={{ margin: "0 10px" }} className="right">
+            Credits:{this.props.auth.credits}
+          </li>,
+          <li key="1" className="right">
+            <a href="/user/album">{this.props.auth.userName}</a>
+          </li>
+        ];
+    }
+  }
   render() {
-    return <div className="header">
+    console.log(this.props);
+
+    return (
+      <div className="header">
         <nav>
           <div className="nav-wrapper">
             <div className="row">
@@ -26,16 +54,18 @@ class Header extends Component {
                   <li>
                     <a href="/picStore">图库</a>
                   </li>
-                  <li className="right">
-                    <a href="#">Login with Github</a>
-                  </li>
+                  {this.renderContent()}
                 </ul>
               </div>
             </div>
           </div>
         </nav>
-      </div>;
+      </div>
+    );
   }
 }
 
-export default Header;
+function mapStateToProps({ auth }) {
+  return { auth };
+}
+export default connect(mapStateToProps)(Header);
