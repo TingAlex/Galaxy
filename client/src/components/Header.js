@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import Payments from "./Payments";
 // import $ from "jquery";
 import "materialize-css";
 class Header extends Component {
@@ -21,14 +22,17 @@ class Header extends Component {
         );
       default:
         return [
-          <li key="2" className="right">
+          <li key="3" className="right">
             <a href="/api/logout">Logout</a>
           </li>,
-          <li key="3" style={{ margin: "0 10px" }} className="right">
+          <li key="2" style={{ margin: "0 10px" }} className="right">
             Credits:{this.props.auth.credits}
           </li>,
           <li key="1" className="right">
             <a href="/user/album">{this.props.auth.userName}</a>
+          </li>,
+          <li key="0" className="right">
+            <Payments/>
           </li>
         ];
     }

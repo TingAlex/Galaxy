@@ -12,11 +12,12 @@ require("./models/Cashflow")
 require("./models/Picture");
 //passport因为其中引入了User表，所以一定要放在下面！
 require("./services/passport");
-
+const bodyParser = require("body-parser");
 mongoose.connect(keys.mongoURI);
 
 const app = express();
 //middleware
+app.use(bodyParser.json());
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
@@ -29,6 +30,7 @@ app.use(passport.session());
 
 app.use(express.static("public"));
 require("./routes/authRoutes")(app);
+require("./routes/billingRoutes")(app);
 require("./routes/picUploadRoutes")(app);
 const PORT = process.env.PORT || 5000;
 
